@@ -1,0 +1,16 @@
+<div class="container">
+  <h1 id="title">Bundesländer</h1>
+  <ul id="states" class="row">
+    <li *ngFor="let state of stateList" class="col-12 col-sm-6 col-md-4 item" [routerLink]="[state.url]">
+      <div class="item__text">
+        <div class="item__text__city">{{state.name}}</div>
+        <div class="item__text__schools-count">{{state.schoolCount}} Schulen</div>
+      </div>
+    </li>
+  </ul>
+  <ul id="persons" class="pagination flex-wrap">
+    <li *ngFor="let person of personIndexCounts | keyvalue" class="page-item">
+      <a *ngIf="person.value > 0" class="page-link" href="#">{{person.key}}</a>
+    </li>
+  </ul>
+</div>

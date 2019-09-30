@@ -1,0 +1,79 @@
+div.container { 
+	max-width: 100% !important;
+	padding: 0;
+} 
+
+h1#title {
+	padding: 10px 20px 7px 20px;
+    margin: 0 auto;
+    color: #666;
+    background: #ddd;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+@media only screen and (min-width : 800px) {
+	
+	div.container { 
+		max-width: 1024px !important;
+		padding: 0 5px !important;
+	} 
+
+	h1#title {
+		width: calc(100% - 20px);
+	}
+
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul#states li.item{
+	padding: 10px !important;
+}
+
+ul#states li.item div.item__text:hover {
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+ul#states li.item div.item__text{
+	border: 10px solid #ddd;
+	padding: 10px;
+	font-weight: 700;
+}
+
+ul#states li.item div.item__text__city{
+	position: relative;
+	bottom:4px;
+}
+
+ul#states li.item div.item__text__schools-count{
+	color: #b0b0b3;
+	font-weight: 600;
+    font-size: 0.8rem;
+}
+
+ul#persons {
+	padding: 0 6px;
+}
+
+ul#persons li a { 
+    text-transform: uppercase;
+    background-color: #ddd;
+    color: #212529;
+    margin: 4px 4px;
+    width: 30px;
+    border-radius: 0;
+    text-align: center;
+	padding: 4px 0px;
+	font-weight: 700;
+}
+
+ul#persons li a:hover { 
+	color: #ddd;
+	background-color: #212529;
+}
